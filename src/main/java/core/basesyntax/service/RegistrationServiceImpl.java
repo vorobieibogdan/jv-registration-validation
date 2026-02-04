@@ -55,7 +55,6 @@ public class RegistrationServiceImpl implements RegistrationService {
         return storageDao.add(user);
     }
 
-    // ✅ custom unchecked exception (no new file)
     private static class RegistrationException extends RuntimeException {
         public RegistrationException(String message) {
             super(message);
